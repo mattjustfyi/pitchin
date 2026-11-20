@@ -57,7 +57,7 @@ Notes from profiling `data/working-bee-events-rrule.json`. These shape steps 5â€
 **2. âœ… Create GitHub repo**
 
 **3. Scaffold the monorepo**
-- Pin Node in `.nvmrc` (Node 22 LTS) and add a `packageManager` field for pnpm.
+- Pin Node in `.nvmrc` (Node 26 LTS) and add a `packageManager` field for pnpm.
 - Add `pnpm-workspace.yaml` covering `apps/*` and `packages/*`.
 - Create `apps/web` with `pnpm create vite apps/web --template react-ts`.
 - Create `packages/events` (`"name": "@pitchin/events"`) with TypeScript, Vitest, and `zod` and `rrule` as dependencies.
