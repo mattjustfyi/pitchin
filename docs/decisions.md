@@ -7,3 +7,7 @@
 ## 2026-11-24: pnpm over npm
 
 Went with pnpm due to security benefits, better workspace support, and that it's sufficiently popular that there shouldn't be much friction from not picking npm.
+
+## 2026-11-24: ESLint over Oxlint
+
+Oxlint is still lacking in some linting rules and for simplicity I don't want to run both, nor spend much time on researching and resolving issues
