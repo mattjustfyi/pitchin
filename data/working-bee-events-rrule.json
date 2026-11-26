@@ -5076,12 +5076,12 @@
     "id": "X003",
     "event_name": "Gilberton Woodland bushcare",
     "organisation": "Walkerville Bushcare Volunteers Group",
-    "dates_or_rule": "Every Friday all year, 9:30-11am",
+    "dates_or_rule": "Every Friday 9:30-11am",
     "location": "Gilbert St, Gilberton, next to the River Torrens",
     "region": "Adelaide metro",
     "source_url": "https://www.walkerville.sa.gov.au/community/community-groups",
     "type": "volunteering",
-    "category": "Bushcare (planting, weeding, mulching, watering, terracing)",
+    "category": "Bushcare (planting, weeding, mulching, watering)",
     "application_required": "register or contact first (contact email listed)",
     "census_flags": "new (not in census)",
     "schedules": [
@@ -5091,7 +5091,7 @@
         "end_time": "11:00"
       }
     ],
-    "schedule_notes": "Confirmed by the on-site poster at Gilberton Woodland (photographed 2026-11-26). Sessions also include plant ID and biodiversity spotting. Supported by Walkerville Council and Green Adelaide."
+    "schedule_notes": null
   },
   {
     "id": "X004",
