@@ -11,3 +11,7 @@ Went with pnpm due to security benefits, better workspace support, and that it's
 ## 2026-11-24: ESLint over Oxlint
 
 Oxlint is still lacking in some linting rules and for simplicity I don't want to run both, nor spend much time on researching and resolving issues
+
+## 2026-11-26: Prettier with single quotes and no semis
+
+Use single quotes and no semis. This seems most common still in the industry. Single quotes is helpful for JSX,etc when writing double quotes in a string (escaping). Tooling can suggest cases where automatic semicolon insertion doesn't work - omiting it is visually cleaner
