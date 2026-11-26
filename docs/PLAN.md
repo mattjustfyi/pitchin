@@ -70,6 +70,8 @@ Notes from profiling `data/working-bee-events-rrule.json`. These shape steps 5â€
 **4. CI workflow (no deploy yet)**
 
 - `.github/workflows/ci.yml` runs on pull requests and on pushes to `main`. It does checkout, set up pnpm and Node with caching, `pnpm install --frozen-lockfile`, lint, typecheck, test and build.
+- On pull requests, also run GitHub's `dependency-review-action`, which fails if the PR adds or upgrades a dependency with a known vulnerability.
+- Add `pnpm audit --prod --audit-level=high` to CI as an experiment. If it's too noisy or blocks unrelated PRs, make it non-blocking or remove it.
 - Turn on branch protection for `main` and require CI to pass. From here on, work goes through PRs.
 - **Done when:** a PR shows a green CI check.
 

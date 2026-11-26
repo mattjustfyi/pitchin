@@ -15,3 +15,7 @@ Oxlint is still lacking in some linting rules and for simplicity I don't want to
 ## 2026-11-26: Prettier with single quotes and no semis
 
 Use single quotes and no semis. This seems most common still in the industry. Single quotes is helpful for JSX,etc when writing double quotes in a string (escaping). Tooling can suggest cases where automatic semicolon insertion doesn't work - omiting it is visually cleaner
+
+## 2026-11-26: Dependency review and pnpm audit in CI
+
+Add the action to monitor new problematic dependencies to help stay on top of things. It's cheaper to solve these issues while they're in your mind/context than later. And, add the audit for now as an experiement. If it's too noisy/blocking then we'll turn it off later.
