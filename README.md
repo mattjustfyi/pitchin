@@ -12,6 +12,10 @@ Find a drop-in volunteering event near you. Pitch In and help out your community
 2. **Autonomous updates:** the calendar keeps itself up to date.
 3. **Australia-wide:** support for the other states and territories.
 
+### Keeping the code reusable
+
+Pitch In is about volunteering, but the code shouldn't be tied to that. The aim is that the same code can power other calendars, such as a separate site for free exercise and group activities, or a site for other community events, and that these could stay separate or be merged later. Avoid hardcoding volunteering-specific assumptions where a general event concept would do. See [ideas](docs/ideas.md).
+
 ### Stack for stage 1
 
 - **Frontend:** Vite, React and TypeScript, as a static single-page app that loads `events.json` at runtime.
