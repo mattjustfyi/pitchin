@@ -13,6 +13,21 @@ concurrency:
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
+  # Fails a PR that adds or upgrades a dependency with a known vulnerability.
+  # Needs the repository's dependency graph to be enabled.
+  dependency-review:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Review dependency changes
+        uses: actions/dependency-review-action@v5
+        with:
+          # The default is runtime only. Build tooling matters here too.
+          fail-on-scopes: runtime, development, unknown
+
   ci:
     runs-on: ubuntu-latest
     steps:
